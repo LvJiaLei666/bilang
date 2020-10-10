@@ -70,7 +70,6 @@ export default {
 } 
 .van-form{
   margin-left:0.7rem;
-  padding-top:2.4rem;
  
 }
 .van-form .van-cell{
@@ -82,6 +81,7 @@ export default {
   line-height:1rem;
   background:#234497;
   color:#fff;
+  opacity: 0.5;
   font-size:0.3rem;
   text-align:center;
  border-radius: 0.5rem;

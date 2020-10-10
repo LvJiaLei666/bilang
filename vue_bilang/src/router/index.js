@@ -24,8 +24,22 @@ import Wallet from '@/components/wk/Wallet'
 import Chalk from '@/components/wk/Chalk'
 import OrderDetails from '@/components/wk/OrderDetails'
 
+// 申靖
+import PersonalDetails from '@/components/shenj/PersonalDetails'
+import PersonalBind from '@/components/shenj/PersonalBind'
+import Index from '@/components/shenj/Index'
+import Cart from '@/components/shenj/Cart'
+import Account from '@/components/shenj/Account'
+import Address from '@/components/shenj/Address'
+import Evaluate from '@/components/shenj/Evaluate'
+import EvaluateShare from '@/components/shenj/EvaluateShare'
 
 
+//陈雅政
+import Integral from '@/components/cyz/Integral'
+import Integrate from '@/components/cyz/Integrate'
+import AllEvaluation from '@/components/cyz/AllEvaluation'
+import Fashion from '@/components/cyz/Fashion'
 Vue.use(Router)
 
 export default new Router({
@@ -133,6 +147,58 @@ export default new Router({
             path: '/MyOrder',
             name: 'MyOrder',
             component: MyOrder
+        }, {
+            path: '/PersonalDetails',
+            name: 'PersonalDetails',
+            component: PersonalDetails
+        }, {
+            path: '/PersonalBind',
+            name: 'PersonalBind',
+            component: PersonalBind
+        }, {
+            path: '/Index',
+            name: 'Index',
+            component: Index
+        }, {
+            path: '/Cart',
+            name: 'Cart',
+            component: Cart
+        }, {
+            path: '/Account',
+            name: 'Account',
+            component: Account
+        }, {
+            path: '/Address',
+            name: 'Address',
+            component: Address
+        }, {
+            path: '/Evaluate',
+            name: 'Evaluate',
+            component: Evaluate
+        }, {
+            path: '/EvaluateShare',
+            name: 'EvaluateShare',
+            component: EvaluateShare
         },
+        {
+            path: '/Integral',
+            name: 'Integral',
+            component: Integral
+        },
+        {
+            path: '/Integrate',
+            name: 'Integrate',
+            component: Integrate
+        },
+        {
+            path: '/AllEvaluation',
+            name: 'AllEvaluation',
+            component: AllEvaluation
+        },
+        {
+            path: '/Fashion',
+            name: 'Fashion',
+            component: Fashion
+        }
     ]
 })

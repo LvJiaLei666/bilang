@@ -14,11 +14,7 @@ import Waist from '@/components/lvjialei/Waist'
 import MyMoney from '@/components/lvjialei/MyMoney'
 import MyAddress from '@/components/lvjialei/MyAddress'
 import MyOrder from '@/components/lvjialei/MyOrder'
-<<<<<<< HEAD
 // 王坤大帅逼
-=======
-//王坤
->>>>>>> d1f7923d3287b75e93fdd4918d640e51d660c204
 import IntroductionToConsultation from '@/components/wk/IntroductionToConsultation'
 import Register from '@/components/wk/Register'
 import Bill from '@/components/wk/Bill'
@@ -320,8 +316,6 @@ export default new Router({
             path: '/product',
             name: 'Product',
             component: Product
-<<<<<<< HEAD
-=======
         },
         //崔泽鹏
         {
@@ -347,7 +341,6 @@ export default new Router({
             path: '/Shouye5',
             name: 'Shouye5',
             component: Shouye5
->>>>>>> d1f7923d3287b75e93fdd4918d640e51d660c204
         }
     ]
 })

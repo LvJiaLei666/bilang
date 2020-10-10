@@ -41,7 +41,7 @@
         微信支付
       </span>
       <span  style="color:gray">
-        2016.01.25
+        2016.01.28
       </span>
     </p>
   </div>

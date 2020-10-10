@@ -72,3 +72,9 @@ export default {
 .cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl,.clearfix{zoom:1}
 
 </style>
+font-size: 0.24rem;
+font-family: Arial;
+font-weight: 900;
+color: #333333;
+}
+</style>

@@ -79,7 +79,7 @@ export default {
   font-size: 0.27rem;
 }
 footer {
-  margin-top: 0.65rem;
+  margin-top: 1.1rem;
   height: 4.5rem;
   background: url(../../../static/images/我的尺寸/footer.png) no-repeat;
   background-size: contain;
@@ -131,7 +131,7 @@ footer {
   position: relative;
 }
 .ruler img:first-of-type{
-  width:414px;
+  width:100%;
 }
 .pointer{
   width: .32rem;

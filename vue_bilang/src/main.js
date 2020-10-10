@@ -30,6 +30,9 @@ Vue.use(AddressList).use(Toast).use(Card).use(Uploader).use(Rate).use(Overlay);
 //陈雅政
 import { Col, Row } from 'vant'
 Vue.use(Col).use(Row)
+//王启明
+import { Grid, GridItem, Picker    } from 'vant'
+Vue.use(Grid).use(GridItem).use(Picker)
     /* eslint-disable no-new */
 new Vue({
     el: '#app',

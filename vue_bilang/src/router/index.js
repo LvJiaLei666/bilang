@@ -41,6 +41,25 @@ import Integrate from '@/components/cyz/Integrate'
 import AllEvaluation from '@/components/cyz/AllEvaluation'
 import Fashion from '@/components/cyz/Fashion'
 Vue.use(Router)
+//王启明
+import Login from '@/components/wqm/Login'
+import Mssizeclothes from '@/components/wqm/Mssizeclothes'
+import Mssizewaist from '@/components/wqm/Mssizewaist'
+import Mssizelong from '@/components/wqm/Mssizelong'
+import Mssizecuff from '@/components/wqm/Mssizecuff'
+import Mssizebust from '@/components/wqm/Mssizebust'
+import Mssizehipline from '@/components/wqm/Mssizehipline'
+import Mssizesleevewidth from '@/components/wqm/Mssizesleevewidth'
+import Mssizesleevewidth2 from '@/components/wqm/Mssizesleevewidth2'
+import Mssizeshoulder from '@/components/wqm/Mssizeshoulder'
+import Trendinformation from '@/components/wqm/Trendinformation'
+import Powderfinishorder from '@/components/wqm/Powderfinishorder'
+import Measurementsnone from '@/components/wqm/Measurementsnone'
+import Sku from '@/components/wqm/Sku'
+import Skunews from '@/components/wqm/Skunews'
+import Product from '@/components/wqm/Product'
+import Measurements from '@/components/wqm/Measurements'
+import Mssizeneck from '@/components/wqm/Mssizeneck'
 
 export default new Router({
     routes: [{
@@ -199,6 +218,96 @@ export default new Router({
             path: '/Fashion',
             name: 'Fashion',
             component: Fashion
-        }
+        },
+        {
+            path: '/pfs',
+            name: 'Powderfinishorder',
+            component: Powderfinishorder
+          },
+          {
+            path: '/login',
+            name: 'Login',
+            component: Login
+          },
+          {
+            path: '/msshlr',
+            name: 'Mssizeshoulder',
+            component: Mssizeshoulder
+          },
+          {
+            path: '/msc',
+            name: 'Mssizeclothes',
+            component: Mssizeclothes
+          },
+          {
+            path: '/msw',
+            name: 'Mssizewaist',
+            component: Mssizewaist
+          },
+          {
+            path: '/msbust',
+            name: 'Mssizebust',
+            component: Mssizebust
+          },
+          {
+            path: '/msneck',
+            name: 'Mssizeneck',
+            component: Mssizeneck
+          },
+          {
+            path: '/msno',
+            name: 'Measurementsnone',
+            component: Measurementsnone
+          },
+          {
+            path: '/msn',
+            name: 'Measurements',
+            component: Measurements
+          },
+          {
+            path: '/msl',
+            name: 'Mssizelong',
+            component: Mssizelong
+          },
+          {
+            path: '/mscf',
+            name: 'Mssizecuff',
+            component: Mssizecuff
+          },
+          {
+            path: '/mship',
+            name: 'Mssizehipline',
+            component: Mssizehipline
+          },
+          {
+            path: '/mssw',
+            name: 'Mssizesleevewidth',
+            component: Mssizesleevewidth
+          },
+          {
+            path: '/mssw2',
+            name: 'Mssizesleevewidth2',
+            component: Mssizesleevewidth2
+          },
+          {
+            path: '/tif',
+            name: 'Trendinformation',
+            component: Trendinformation
+          },
+          {
+            path: '/sku',
+            name: 'Sku',
+            component: Sku
+          },
+          {
+            path: '/skunews',
+            name: 'Skunews',
+            component: Skunews
+          },
+          {
+            path: '/product',
+            name: 'Product',
+            component: Product
+          }
     ]
 })

@@ -13,6 +13,7 @@ import Waist from '@/components/lvjialei/Waist'
 import MyMoney from '@/components/lvjialei/MyMoney'
 import MyAddress from '@/components/lvjialei/MyAddress'
 import MyOrder from '@/components/lvjialei/MyOrder'
+// 王坤大帅逼
 import IntroductionToConsultation from '@/components/wk/IntroductionToConsultation'
 import Register from '@/components/wk/Register'
 import Bill from '@/components/wk/Bill'
@@ -63,43 +64,43 @@ import Mssizeneck from '@/components/wqm/Mssizeneck'
 
 export default new Router({
     routes: [{
-            path: '/wk/OrderDetails',
+            path: '/OrderDetails',
             name: 'OrderDetails',
             component: OrderDetails
         }, {
-            path: '/wk/Chalk',
+            path: '/Chalk',
             name: 'Chalk',
             component: Chalk
         }, {
-            path: '/wk/Wallet',
+            path: '/Wallet',
             name: 'Wallet',
             component: Wallet
         }, {
-            path: '/wk/Collection',
+            path: '/Collection',
             name: 'Collection',
             component: Collection
         }, {
-            path: '/wk/PrivateCard',
+            path: '/PrivateCard',
             name: 'PrivateCard',
             component: PrivateCard
         }, {
-            path: '/wk/Odds',
+            path: '/Odds',
             name: 'Odds',
             component: Odds
         }, {
-            path: '/wk/Coupon',
+            path: '/Coupon',
             name: 'Coupon',
             component: Coupon
         }, {
-            path: '/wk/Bill',
+            path: '/Bill',
             name: 'Bill',
             component: Bill
         }, {
-            path: '/wk/Register',
+            path: '/Register',
             name: 'Register',
             component: Register
         }, {
-            path: '/wk/IntroductionToConsultation',
+            path: '/IntroductionToConsultation',
             name: 'IntroductionToConsultation',
             component: IntroductionToConsultation
         }, {

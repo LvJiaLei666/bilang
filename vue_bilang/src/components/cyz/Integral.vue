@@ -88,7 +88,7 @@
       color: #ffffff;
       font-size: .2rem;
       position: absolute;
-      left: .45rem;
+      left: .53rem;
       font-weight: bolder;
     }
     .num{
@@ -96,7 +96,8 @@
       color: #ffffff;
       font-size: .36rem;
       position: absolute;
-      left: .7rem;
+      left: .8rem;
+      top: .15rem;
       font-weight: bolder;
     }
     .Title{
@@ -104,12 +105,14 @@
       margin-left: .27rem;
       line-height: .2rem;
       color: #333333;
+      margin-top: .25rem;
     }
     .text{
       font-size: .24rem;
       margin-left: .27rem;
       line-height: .2rem;
       color: #666666;
+      margin-top: .25rem;
     }
     .van_cell_2{
       margin-top: .1rem;

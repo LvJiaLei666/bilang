@@ -16,11 +16,11 @@
       </div>
       <div class="ping">
         <span class="PF">产品质量:</span>
-        <van-rate v-model="value":size="10" color="#234497" />
+        <van-rate v-model="value":size="7" color="#234497" />
         <span class="PF">服务态度:</span>
-        <van-rate v-model="value":size="10" color="#234497" />
+        <van-rate v-model="value":size="7" color="#234497" />
         <span class="PF">尺寸合适:</span>
-        <van-rate v-model="value":size="10" color="#234497" />
+        <van-rate v-model="value":size="7" color="#234497" />
       </div>
     </div>
 
@@ -30,11 +30,11 @@
       <p>产品不错，衣服尺寸很适合，下次还会再来！</p>
       <div class="ping">
         <span class="PF">产品质量:</span>
-        <van-rate v-model="value":size="10" color="#234497" />
+        <van-rate v-model="value":size="7" color="#234497" />
         <span class="PF">服务态度:</span>
-        <van-rate v-model="value":size="10" color="#234497" />
+        <van-rate v-model="value":size="7" color="#234497" />
         <span class="PF">尺寸合适:</span>
-        <van-rate v-model="value":size="10" color="#234497" />
+        <van-rate v-model="value":size="7" color="#234497" />
       </div>
       
     </div>
@@ -79,7 +79,7 @@ export default {
     margin-left: .26rem;
   }
   .Img{
-    margin-top: -.4rem;
+    margin-top: -.15rem;
     margin-left: .27rem;
   }
   .Img>img{
@@ -93,7 +93,7 @@ export default {
     margin-left: .15rem;
   }
   .ping{
-    margin-top: -.6rem;
+    margin-top: -.5rem;
     margin-left: .05rem;
     border-bottom: 1px solid #E1E1E1;
   }

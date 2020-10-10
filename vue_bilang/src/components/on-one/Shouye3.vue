@@ -66,7 +66,14 @@
 
 <script>
 export default {
-
+ methods: {
+    onClickLeft() {
+      Toast('返回');
+    },
+    onClickRight() {
+      Toast('按钮');
+    },
+  },
 }
 </script>
 
@@ -160,7 +167,7 @@ export default {
   padding-left: 0.2rem;
   box-sizing: border-box;
   color: #fff;
-  margin-top: 0.2rem;
+      margin-top: 0.2rem;
 }
 .zhan{
   background-color: #000000FF;

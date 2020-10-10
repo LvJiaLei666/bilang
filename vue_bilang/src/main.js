@@ -27,8 +27,10 @@ Vue.use(Swipe).use(SwipeItem).use(VanImage).use(Popup);
 Vue.use(Radio).use(RadioGroup).use(Stepper).use(SubmitBar).use(Checkbox).use(CheckboxGroup).use(NoticeBar);
 Vue.use(AddressList).use(Toast).use(Card).use(Uploader).use(Rate).use(Overlay);
 
-
-/* eslint-disable no-new */
+//陈雅政
+import { Col, Row } from 'vant'
+Vue.use(Col).use(Row)
+    /* eslint-disable no-new */
 new Vue({
     el: '#app',
     router,

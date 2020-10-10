@@ -24,6 +24,12 @@ import Address from '@/components/shenj/Address'
 import Evaluate from '@/components/shenj/Evaluate'
 import EvaluateShare from '@/components/shenj/EvaluateShare'
 
+
+//陈雅政
+import Integral from '@/components/cyz/Integral'
+import Integrate from '@/components/cyz/Integrate'
+import AllEvaluation from '@/components/cyz/AllEvaluation'
+import Fashion from '@/components/cyz/Fashion'
 Vue.use(Router)
 
 export default new Router({
@@ -124,6 +130,26 @@ export default new Router({
             path: '/EvaluateShare',
             name: 'EvaluateShare',
             component: EvaluateShare
+        },
+        {
+            path: '/Integral',
+            name: 'Integral',
+            component: Integral
+        },
+        {
+            path: '/Integrate',
+            name: 'Integrate',
+            component: Integrate
+        },
+        {
+            path: '/AllEvaluation',
+            name: 'AllEvaluation',
+            component: AllEvaluation
+        },
+        {
+            path: '/Fashion',
+            name: 'Fashion',
+            component: Fashion
         }
     ]
 })

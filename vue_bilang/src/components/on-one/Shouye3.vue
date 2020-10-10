@@ -160,6 +160,7 @@ export default {
   padding-left: 0.2rem;
   box-sizing: border-box;
   color: #fff;
+  margin-top: 0.2rem;
 }
 .zhan{
   background-color: #000000FF;

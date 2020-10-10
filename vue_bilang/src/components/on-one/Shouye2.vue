@@ -150,10 +150,11 @@ export default {
   padding-left: 0.2rem;
   box-sizing: border-box;
   color: #fff;
+  padding-bottom: 0.5rem;
 }
 .zhan{
   background-color: #000000FF;
-  margin-top: -0.26rem;
+  /* margin-top: -0.26rem; */
 }
 .juan{
   width: 100%;

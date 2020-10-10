@@ -80,7 +80,7 @@ export default {
 }
 footer {
   margin-top: 0.65rem;
-  height: 7.5rem;
+  height: 4.5rem;
   background: url(../../../static/images/我的尺寸/footer.png) no-repeat;
   background-size: contain;
 }

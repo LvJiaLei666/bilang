@@ -90,4 +90,9 @@ font-family: Arial;
 font-weight: 900;
 color: #333333;
 }
+
+
+.van-nav-bar--fixed{
+  background-color: #000;
+}
 </style>

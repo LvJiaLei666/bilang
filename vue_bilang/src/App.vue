@@ -70,29 +70,5 @@ export default {
 	float:right;
 }
 .cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl,.clearfix{zoom:1}
-.app{
-  width: 100%;
-}
-.ms_price{
-  text-align: center;
-}
-.ms_price_cm1{
 
-font-size: 0.6rem;
-font-family: Arial;
-font-weight: 900;
-color: #333333;
-}
-.ms_price_cm{
-
-font-size: 0.24rem;
-font-family: Arial;
-font-weight: 900;
-color: #333333;
-}
-
-
-.van-nav-bar--fixed{
-  background-color: #000;
-}
 </style>

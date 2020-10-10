@@ -30,9 +30,15 @@ Vue.use(AddressList).use(Toast).use(Card).use(Uploader).use(Rate).use(Overlay);
 //陈雅政
 import { Col, Row } from 'vant'
 Vue.use(Col).use(Row)
+
 //王启明
-import { Grid, GridItem, Picker    } from 'vant'
-Vue.use(Grid).use(GridItem).use(Picker)
+import {  Picker    } from 'vant'
+Vue.use(Picker)
+
+//王坤
+import { CountDown } from 'vant';
+import { Grid, GridItem } from 'vant';
+Vue.use(CountDown).use(Grid).use(GridItem)
     /* eslint-disable no-new */
 new Vue({
     el: '#app',

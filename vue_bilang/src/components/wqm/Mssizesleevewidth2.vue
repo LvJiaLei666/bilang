@@ -33,9 +33,6 @@
   <van-picker
   title=""
   :columns="columns"
-  @confirm="onConfirm"
-  @cancel="onCancel"
-  @change="onChange"
 />
   </div>
 </van-overlay>
@@ -82,7 +79,7 @@ export default {
   height: 1rem;
   background:#fff;
   position: absolute;
-  top:2.7rem;
+  top:3.8rem;
   left: 0.45rem;
   border-radius:0.2rem 0.2rem 0 0;
   
@@ -94,6 +91,7 @@ font-weight: normal;
 color: #333333;
 float: left;
 margin-left: 0.2rem;
+padding-top: 0.3rem;
 }
 .tjxf span{
   font-size: 0.3rem;
@@ -109,6 +107,7 @@ font-weight: normal;
 color: #234497;
 float: right;
 margin-right: 0.2rem;
+padding-top:0.3rem;
 }
   .wrapper {
     display: flex;
@@ -119,7 +118,7 @@ margin-right: 0.2rem;
   }
 .van-picker{
   width: 6.6rem;
-  height: 6rem;
+  height: 4rem;
   border-radius: 0 0 0.2rem 0.2rem;
 }
 

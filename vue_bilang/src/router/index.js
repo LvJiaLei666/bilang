@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+//吕嘉磊
 import HelloWorld from '@/components/HelloWorld'
 import AddShippingAddress from '@/components/lvjialei/AddShippingAddress'
 import mySizeNone from '@/components/lvjialei/mySizeNone'
@@ -13,7 +14,11 @@ import Waist from '@/components/lvjialei/Waist'
 import MyMoney from '@/components/lvjialei/MyMoney'
 import MyAddress from '@/components/lvjialei/MyAddress'
 import MyOrder from '@/components/lvjialei/MyOrder'
+<<<<<<< HEAD
 // 王坤大帅逼
+=======
+//王坤
+>>>>>>> d1f7923d3287b75e93fdd4918d640e51d660c204
 import IntroductionToConsultation from '@/components/wk/IntroductionToConsultation'
 import Register from '@/components/wk/Register'
 import Bill from '@/components/wk/Bill'
@@ -61,6 +66,12 @@ import Skunews from '@/components/wqm/Skunews'
 import Product from '@/components/wqm/Product'
 import Measurements from '@/components/wqm/Measurements'
 import Mssizeneck from '@/components/wqm/Mssizeneck'
+//崔泽鹏
+import Shouye from '@/components/on-one/Shouye'
+import Shouye2 from '@/components/on-one/Shouye2'
+import Shouye3 from '@/components/on-one/Shouye3'
+import Shouye4 from '@/components/on-one/Shouye4'
+import Shouye5 from '@/components/on-one/Shouye5'
 
 export default new Router({
     routes: [{
@@ -309,6 +320,34 @@ export default new Router({
             path: '/product',
             name: 'Product',
             component: Product
+<<<<<<< HEAD
+=======
+        },
+        //崔泽鹏
+        {
+            path: '/Shouye',
+            name: 'Shouye',
+            component: Shouye
+        }, {
+            path: '/Shouye2',
+            name: 'Shouye2',
+            component: Shouye2
+        },
+        {
+            path: '/Shouye3',
+            name: 'Shouye3',
+            component: Shouye3
+        },
+        {
+            path: '/Shouye4',
+            name: 'Shouye4',
+            component: Shouye4
+        },
+        {
+            path: '/Shouye5',
+            name: 'Shouye5',
+            component: Shouye5
+>>>>>>> d1f7923d3287b75e93fdd4918d640e51d660c204
         }
     ]
 })

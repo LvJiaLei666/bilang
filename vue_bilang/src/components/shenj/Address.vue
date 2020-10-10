@@ -36,20 +36,20 @@ export default {
           name: '李先生',
           tel: '13423433424',
           address: '广东省佛山市禅城区印象购物中心5号楼b-1011221902室',
-          isDefault: false,
-        },
+          // isDefault: false,
+        }
       ],
-    };
+    }
   },
   methods: {
     onAdd() {
-      Toast('添加新地址');
+      this.$toast('添加新地址');
     },
     onEdit(item, index) {
-      Toast('编辑地址:' + index);
-    },
+      this.$toast('编辑地址:' + index);
+    }
   },
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

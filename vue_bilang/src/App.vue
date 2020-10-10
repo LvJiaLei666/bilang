@@ -61,4 +61,14 @@ export default {
 .van-tabs__line {
   background-color: #234497;
 }
+
+/* 默认样式 */
+  .l{
+	float:left;
+}
+.r{
+	float:right;
+}
+.cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl,.clearfix{zoom:1}
+
 </style>

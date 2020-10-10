@@ -14,76 +14,116 @@ import MyMoney from '@/components/lvjialei/MyMoney'
 import MyAddress from '@/components/lvjialei/MyAddress'
 import MyOrder from '@/components/lvjialei/MyOrder'
 
-
+// 申靖
+import PersonalDetails from '@/components/shenj/PersonalDetails'
+import PersonalBind from '@/components/shenj/PersonalBind'
+import Index from '@/components/shenj/Index'
+import Cart from '@/components/shenj/Cart'
+import Account from '@/components/shenj/Account'
+import Address from '@/components/shenj/Address'
+import Evaluate from '@/components/shenj/Evaluate'
+import EvaluateShare from '@/components/shenj/EvaluateShare'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/AddShippingAddress',
-      name: 'AddShippingAddress',
-      component: AddShippingAddress
-    },
-    {
-      path: '/mySizeNone',
-      name: 'mySizeNone',
-      component: mySizeNone
-    },
-    {
-      path: '/mySize',
-      name: 'mySize',
-      component: mySize
-    },
-    {
-      path: '/Shoulders',
-      name: 'Shoulders',
-      component: Shoulders
-    },
-    {
-      path: '/Height',
-      name: 'Height',
-      component: Height
-    },
-    {
-      path: '/Weight',
-      name: 'Weight',
-      component: Weight
-    },
-    {
-      path: '/Hip',
-      name: 'Hip',
-      component: Hip
-    },
-    {
-      path: '/Chest',
-      name: 'Chest',
-      component: Chest
-    },
-    {
-      path: '/Waist',
-      name: 'Waist',
-      component: Waist
-    },
-    {
-      path: '/MyMoney',
-      name: 'MyMoney',
-      component: MyMoney
-    },
-    {
-      path: '/MyAddress',
-      name: 'MyAddress',
-      component: MyAddress
-    },
-    {
-      path: '/MyOrder',
-      name: 'MyOrder',
-      component: MyOrder
-    },
-  ]
+    routes: [{
+            path: '/',
+            name: 'HelloWorld',
+            component: HelloWorld
+        },
+        {
+            path: '/AddShippingAddress',
+            name: 'AddShippingAddress',
+            component: AddShippingAddress
+        },
+        {
+            path: '/mySizeNone',
+            name: 'mySizeNone',
+            component: mySizeNone
+        },
+        {
+            path: '/mySize',
+            name: 'mySize',
+            component: mySize
+        },
+        {
+            path: '/Shoulders',
+            name: 'Shoulders',
+            component: Shoulders
+        },
+        {
+            path: '/Height',
+            name: 'Height',
+            component: Height
+        },
+        {
+            path: '/Weight',
+            name: 'Weight',
+            component: Weight
+        },
+        {
+            path: '/Hip',
+            name: 'Hip',
+            component: Hip
+        },
+        {
+            path: '/Chest',
+            name: 'Chest',
+            component: Chest
+        },
+        {
+            path: '/Waist',
+            name: 'Waist',
+            component: Waist
+        },
+        {
+            path: '/MyMoney',
+            name: 'MyMoney',
+            component: MyMoney
+        },
+        {
+            path: '/MyAddress',
+            name: 'MyAddress',
+            component: MyAddress
+        },
+        {
+            path: '/MyOrder',
+            name: 'MyOrder',
+            component: MyOrder
+        },
+        {
+            path: '/PersonalDetails',
+            name: 'PersonalDetails',
+            component: PersonalDetails
+        }, {
+            path: '/PersonalBind',
+            name: 'PersonalBind',
+            component: PersonalBind
+        }, {
+            path: '/Index',
+            name: 'Index',
+            component: Index
+        }, {
+            path: '/Cart',
+            name: 'Cart',
+            component: Cart
+        }, {
+            path: '/Account',
+            name: 'Account',
+            component: Account
+        }, {
+            path: '/Address',
+            name: 'Address',
+            component: Address
+        }, {
+            path: '/Evaluate',
+            name: 'Evaluate',
+            component: Evaluate
+        }, {
+            path: '/EvaluateShare',
+            name: 'EvaluateShare',
+            component: EvaluateShare
+        }
+    ]
 })

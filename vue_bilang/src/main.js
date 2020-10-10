@@ -4,16 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { NavBar, Icon, Cell, CellGroup, Divider, Form, Field, Switch, Button, Search, Tag, Tab, Tabs } from 'vant'
-import { Grid, GridItem, CountDown, Col, Row, Swipe, SwipeItem, NavBar, Icon, Cell, CellGroup, Divider, Form, Field, Switch, Button, Search, Tag, Tab, Tabs } from 'vant'
-
 Vue.config.productionTip = false
-Vue.use(Grid);
-Vue.use(GridItem);
-Vue.use(CountDown);
-Vue.use(Col);
-Vue.use(Row);
-Vue.use(Swipe)
-Vue.use(SwipeItem)
 Vue.use(NavBar)
 Vue.use(Icon)
 Vue.use(Cell)

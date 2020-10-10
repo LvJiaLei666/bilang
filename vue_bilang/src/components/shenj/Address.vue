@@ -37,7 +37,7 @@ export default {
           tel: '13423433424',
           address: '广东省佛山市禅城区印象购物中心5号楼b-1011221902室',
           // isDefault: false,
-        }
+        },
       ]
     }
   },

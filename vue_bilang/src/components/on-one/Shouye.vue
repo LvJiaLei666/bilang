@@ -1,6 +1,6 @@
 <template>
 <div class="box">  
-<van-nav-bar title="添加收货地址" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
+<van-nav-bar title="比朗" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -40,7 +40,7 @@ export default {
       this.$router.go(-1)
     },
     dian() {
-      this.$router.push({ path: '/Shouye3' })
+      this.$router.push({ path: '/Shouye2' })
     }
   },
 }

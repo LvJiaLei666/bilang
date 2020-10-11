@@ -1,7 +1,7 @@
 <template>
   <div class="shouye">
      <div class="reset">
-  <van-nav-bar title="添加收货地址" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
+  <van-nav-bar title="比朗" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -46,7 +46,7 @@
     </div>
  
   </div>
-  <div class="quan">
+  <div class="quan" @click="$routr.push('/Shouye3')">
     <img src="../../..//static/images/h5页面2/右箭头.png" alt="">
     <p>点击领取</p>
     <div></div>

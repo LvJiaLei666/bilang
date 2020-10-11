@@ -46,7 +46,7 @@
     </div>
  
   </div>
-  <div class="quan" @click="$routr.push('/Shouye3')">
+  <div class="quan" @click="$router.push('/Shouye3')">
     <img src="../../..//static/images/h5页面2/右箭头.png" alt="">
     <p>点击领取</p>
     <div></div>

@@ -1,6 +1,6 @@
 <template>
   <div class='fashions'>
-     <van-nav-bar title="全部评价" left-text="返回" left-arrow class="head">
+     <van-nav-bar title="全部评价" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -30,6 +30,11 @@ export default {
     return {
       
     }
+  },
+  methods:{
+    onClickLeft() {
+      this.$router.go(-1)
+    },
   }
 }
 </script>

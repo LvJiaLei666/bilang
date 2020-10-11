@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <!-- 头部 -->
-    <van-nav-bar title="比朗" left-text="返回" left-arrow class='head' @click-left="onClickLeft">
+    <van-nav-bar title="比朗" left-text="返回" left-arrow class='head' >
     <template #right>
     <van-icon name="ellipsis" size="34" color='#fff'/>
     </template>
@@ -112,9 +112,6 @@ export default {
     }
     // console.log(this.$refs.trans.className);
   },
-  onClickLeft(){
-      this.$router.go(-1)
-    }
   },
   computed:{
     

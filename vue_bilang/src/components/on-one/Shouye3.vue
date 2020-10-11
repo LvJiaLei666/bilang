@@ -1,7 +1,7 @@
 <template>
   <div class="shouye">
      <div class="reset">
-   <van-nav-bar title="添加收货地址" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
+   <van-nav-bar title="比朗" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -44,7 +44,7 @@
     <span>●恭喜您获得200元现金体验卷</span>
   </div>
   <div class="quan_2">
-    <div class="quan_21">
+    <div class="quan_21" @click="$router.push('/Shouye4')">
       <div class="quan_21_1">
           <span>点击获取</span>
           <img src="../../../static/images/h5页面3/h5页面x3_123_03.png" alt="">

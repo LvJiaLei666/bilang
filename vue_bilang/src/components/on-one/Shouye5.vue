@@ -5,7 +5,6 @@
   title="测量尺寸"
   left-text="返回"
   right-text="●●●"
-  left-arrow
   fixed
   @click-left="onClickLeft"
   @click-right="onClickRight"
@@ -64,7 +63,14 @@
 
 <script>
 export default {
-
+  methods: {
+    onClickLeft() {
+      Toast('返回');
+    },
+    onClickRight() {
+      Toast('按钮');
+    },
+  },
 }
 </script>
 

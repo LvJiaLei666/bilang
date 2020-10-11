@@ -9,8 +9,8 @@
     <!-- 主体 -->
     <div class='body'>
         <div class="body_carts">
-            <van-radio-group v-model="radio">
-                <van-radio name="1" label-disabled>
+            <van-checkbox-group v-model="result">
+                <van-checkbox name="1" label-disabled>
                     <img src="../../../static\images\购物车\h5页面_2_04.png" class='body_imgs'>
                     <div class="body_carts_shop">
                         <p class="body_ps">春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长</p>
@@ -18,12 +18,8 @@
                         <van-stepper v-model="value" input-width="0.6rem" button-size="0.5rem" class='bjq' />
                         <img src="../../../static\images\购物车\del.png" class="img_del">
                     </div>
-                </van-radio>
-            </van-radio-group>
-        </div>
-        <!-- <div class="body_carts">
-            <van-radio-group v-model="radio">
-                <van-radio name="2" label-disabled>
+                </van-checkbox>
+                <van-checkbox name="2" label-disabled>
                     <img src="../../../static\images\购物车\h5页面_2_04.png" class='body_imgs'>
                     <div class="body_carts_shop">
                         <p class="body_ps">春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长</p>
@@ -31,12 +27,8 @@
                         <van-stepper v-model="value1" input-width="0.6rem" button-size="0.5rem" class='bjq' />
                         <img src="../../../static\images\购物车\del.png" class="img_del">
                     </div>
-                </van-radio>
-            </van-radio-group>
-        </div> -->
-        <!-- <div class="body_carts">
-            <van-radio-group v-model="radio">
-                <van-radio name="3" label-disabled>
+                </van-checkbox>
+                <van-checkbox name="3" label-disabled>
                     <img src="../../../static\images\购物车\h5页面_2_04.png" class='body_imgs'>
                     <div class="body_carts_shop">
                         <p class="body_ps">春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长</p>
@@ -44,12 +36,13 @@
                         <van-stepper v-model="value2" input-width="0.6rem" button-size="0.5rem" class='bjq' />
                         <img src="../../../static\images\购物车\del.png" class="img_del">
                     </div>
-                </van-radio>
-            </van-radio-group>
-        </div> -->
+                </van-checkbox>
+            </van-checkbox-group>
+        </div>
+        
     </div>
     <!-- 底部 -->
-    <div class='foot'>
+    <!-- <div class='foot'>
         <van-radio-group v-model="radio">
             <van-radio name='2' icon-size="0.3" class='foot_l' label-disabled >
                 <p class='foot_span'>全选</p>
@@ -63,10 +56,10 @@
                 </div>
             </van-radio>
         </van-radio-group>
-    </div>
-    <!-- <van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
+    </div> -->
+    <van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
     <van-checkbox v-model="checked">全选</van-checkbox>
-    </van-submit-bar> -->
+    </van-submit-bar>
   </div>
 </template>
 
@@ -75,11 +68,11 @@ export default {
   name: 'Cart',
   data () {
     return {
-      radio: 1,
-      value: 1,
-    //   value1: 1,
-    //   value2: 1,
-      checked:true
+      result:[],
+      value:1,
+      value1:1,
+      value2:1,
+      checked:false
     }
   },
   methods:{
@@ -92,6 +85,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.van-checkbox{
+    padding-left: 0.3rem;
+    background-color: #fff;
+    margin-top:0.18rem;
+}
 .carts{
     width:7.5rem;
     height:13.14rem;

@@ -5,7 +5,6 @@
   title="比朗"
   left-text="返回"
   right-text="●●●"
-  left-arrow
   @click-left="onClickLeft"
   @click-right="onClickRight"
 />

@@ -203,7 +203,7 @@ export default new Router({
         }, {
             path: '/Evaluate',
             name: 'Evaluate',
-            component: Evaluate
+            component: Evaluate,
         }, {
             path: '/EvaluateShare',
             name: 'EvaluateShare',

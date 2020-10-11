@@ -50,7 +50,7 @@
     </div>
     <div class="btn">
        <van-button color="#bbbbbb" plain  @click="$router.push({path:'/msn'})">重新测量</van-button>
-    <van-button color="#7232dd">确定尺寸</van-button>
+    <van-button color="#7232dd" @click="$router.push('/mySize')">确定尺寸</van-button>
    
     </div>
   </div>

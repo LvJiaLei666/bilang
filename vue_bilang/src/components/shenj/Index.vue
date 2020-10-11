@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <!-- 头部 -->
-    <van-nav-bar title="比朗" left-text="返回" left-arrow class='head'>
+    <van-nav-bar title="比朗" left-text="返回" left-arrow class='head' @click-left="onClickLeft">
     <template #right>
     <van-icon name="ellipsis" size="34" color='#fff'/>
     </template>
@@ -66,7 +66,7 @@
                 <img src="../../../static\images\个人中心\icon_04.png" >
                 <span>我的购物车</span>
             </div>
-            <div class='centers_icon' @click="$router.push('/mySize')">
+            <div class='centers_icon' @click="$router.push('/mySizeNone')">
                 <img src="../../../static\images\个人中心\icon_05.png" >
                 <span>我的尺寸</span>
             </div>
@@ -74,7 +74,7 @@
                 <img src="../../../static\images\个人中心\icon_06.png" >
                 <span>我的钱包</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/Collection')">
                 <img src="../../../static\images\个人中心\icon_07.png" >
                 <span>我的收藏</span>
             </div>
@@ -111,7 +111,10 @@ export default {
       this.show = true;
     }
     // console.log(this.$refs.trans.className);
-  }
+  },
+  onClickLeft(){
+      this.$router.go(-1)
+    }
   },
   computed:{
     

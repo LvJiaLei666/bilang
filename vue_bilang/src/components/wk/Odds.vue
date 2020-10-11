@@ -232,5 +232,10 @@ export default {
       time: 30 * 60 * 60 * 1000,
     };
   },
+  methods:{
+    onClickLeft(){
+      this.$router.go(-1)
+    }
+  }
 };
 </script>

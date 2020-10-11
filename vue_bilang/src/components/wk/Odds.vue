@@ -59,7 +59,7 @@
   </template>
 </van-count-down>
 </div>
-<div class="detailed">
+<div class="detailed" @click="$router.push('/Skunews')">
   <img src="../../../static/images/限时特惠/pic_1.png"> 
   <p>春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长...</p>
   <span>￥ 199.00</span>

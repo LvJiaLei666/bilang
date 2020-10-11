@@ -6,7 +6,7 @@
         <van-icon name="ellipsis" size="34" color="#fff" />
       </template>
     </van-nav-bar>
-    <van-cell-group>
+    <van-cell-group @click="$router.push('/AddShippingAddress')">
       <van-cell>
         <template #title>
         <span class="address_name">李先生   13423433424</span>
@@ -16,7 +16,7 @@
       </template>
       </van-cell>
     </van-cell-group>
-    <van-cell-group>
+    <van-cell-group @click="$router.push('/AddShippingAddress')">
       <van-cell>
         <template #title>
         <span class="address_name">李先生   13423433424</span>
@@ -26,7 +26,7 @@
       </van-cell>
     </van-cell-group>
     <div class="addnew">
-      <van-button type="primary" size="large" color="#234497">添加新地址</van-button>
+      <van-button type="primary" size="large" color="#234497" @click="$router.push('/AddShippingAddress')">添加新地址</van-button>
 
     </div>
   </div>

@@ -31,13 +31,18 @@
         <span>地区</span>
         <img src="../../../static\images\个人信息\个人信息_11.png" class='details_img03'/>
       </div>
+
+      <div class="details_body_02">
+        <span>手机</span>
+        <van-button  plain class='code r'>发送验证码</van-button>
+      </div>
       <!-- --------------组件-------------------- -->
-      <van-field
+      <!-- <van-field
         v-model="value"
         label="手机"
         placeholder="发送验证码"
         input-align="right"
-      />
+      /> -->
       <!-- --------------组件-------------------- -->
       <van-cell-group>
       <van-field v-model="value" label="身高(cm)：" class='details_value1'/>
@@ -154,5 +159,11 @@ export default {
   height:1.01rem;
   background-color: #234497;
   margin-left:0.3rem;
+}
+.code{
+  color:#234497;
+  border:none;
+  outline:none;
+  font-size: 0.26rem;
 }
 </style>  

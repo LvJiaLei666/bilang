@@ -8,8 +8,7 @@
     </van-nav-bar>
     
     <!-- 轮播图 -->
-    <transition name="slide">
-      <div class='body' v-if='show'>
+      <div :class='show ? "body" : "body ta"' >
         <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white" >
             <van-swipe-item><img src="../../../static\images\首页\banner_1.png" /></van-swipe-item>
             <van-swipe-item><img src="../../../static\images\首页\banner_1.png" /></van-swipe-item>
@@ -32,6 +31,7 @@
         />
         <!-- 限时特惠 -->
         <van-image
+            @click="$router.push('/Odds')"
             width="7.5rem"
             height="2.6rem"
             fit="cover"
@@ -54,19 +54,19 @@
                 <img src="../../../static\images\个人中心\icon_01.png" >
                 <span>首页</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/PersonalDetails')">
                 <img src="../../../static\images\个人中心\icon_02.png" >
                 <span>我的信息</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/MyOrder')">
                 <img src="../../../static\images\个人中心\icon_03.png" >
                 <span>我的订单</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/Cart')">
                 <img src="../../../static\images\个人中心\icon_04.png" >
                 <span>我的购物车</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/mySize')">
                 <img src="../../../static\images\个人中心\icon_05.png" >
                 <span>我的尺寸</span>
             </div>
@@ -78,7 +78,7 @@
                 <img src="../../../static\images\个人中心\icon_07.png" >
                 <span>我的收藏</span>
             </div>
-            <div class='centers_icon centers_icons'>
+            <div class='centers_icon centers_icons' @click="$router.push('/MyAddress')">
                 <img src="../../../static\images\个人中心\icon_08.png" >
                 <span>我的地址</span>
             </div>
@@ -87,10 +87,10 @@
                 <span>返回</span>
             </div>
         </div>
+        <!-- 定位 -->
+        <img src="../../../static\images\首页\button.png" class='fixeds' @click='shows'>
        </div> 
-      </transition>
-       <!-- 定位 -->
-        <img src="../../../static\images\首页\button.png" class='fixeds' @click='show = !show'>
+       
         
   </div>
 </template>
@@ -100,11 +100,18 @@ export default {
   name: 'Index',
   data () {
     return {
-      show:true,
+        show:true
 }
   },
   methods:{
-
+  shows(){
+    if(this.show == true){
+        this.show=false;
+    }else{
+      this.show = true;
+    }
+    // console.log(this.$refs.trans.className);
+  }
   },
   computed:{
     
@@ -115,6 +122,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /* 轮播图 */
+
 .my-swipe .van-swipe-item {
     color: #fff;
     font-size: 20px;
@@ -127,30 +135,24 @@ export default {
       height:3.4rem;
   }
   .fixeds{
-      position:fixed;
+      position:absolute;
       top:9.22rem;
       left:0.38rem;
       width:0.6rem;
       height:0.6rem;
   }
 /* 主体 */
-
-.slide-leave-active{
-transition:all 5s;
-transform: translateX(5.8rem);
-}
-
-.slide-enter{
-  opacity: 1;
+.ta{
   transform: translateX(5.8rem);
 }
-.slide-enter-active{
-transition:all 5s;
+.body{
+  transition:all 2s;
+  position:relative;
 }
 /* 个人中心 */
 .centers{
   width:5.8rem;
-  height:12.08rem;
+  height:13.34rem;
   background-color: #2D3657;
   position: absolute;
   /* top:0.88rem; */
@@ -183,11 +185,12 @@ transition:all 5s;
 .centers_icon>img{
 width:0.27rem;
 height:0.25rem;
-  margin:0.74rem 0.27rem 0 0.47rem;
+  margin:0rem 0.27rem 0 0.47rem;
 }
 .centers_icon>span{
   font-size: 0.3rem;
   color:#fff;
+  line-height: 0.9rem;
 }
 .centers_icons{
   margin-bottom:0.6rem;

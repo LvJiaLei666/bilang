@@ -47,7 +47,7 @@
       <van-field v-model="value" label="体重(kg)：" class='details_value1 details_value2'/>
       </van-cell-group>
     </div>
-    <van-button type="primary" size="large" class='foot_btn'>保存</van-button> 
+    <van-button type="primary" size="large" class='foot_btn' @click="$router.push('/Index')">保存</van-button> 
   </div>
 </template>
 

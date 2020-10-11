@@ -41,7 +41,7 @@
       <van-icon name="passed" size="0.3rem" style="float:left;margin-right:0.1rem;"/>
       <span>请阅读<a href="#">《注册须知》</a></span>
     </div>
-    <div class="register">
+    <div class="register" @click="$router.push('/')">
       <span>注册</span>
     </div>
   </div>

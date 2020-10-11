@@ -70,7 +70,13 @@ import Shouye4 from '@/components/on-one/Shouye4'
 import Shouye5 from '@/components/on-one/Shouye5'
 
 export default new Router({
-    routes: [{
+    routes: [
+        {
+            path: '/',
+            name: 'Login',
+            component: Login
+        },
+        {
             path: '/OrderDetails',
             name: 'OrderDetails',
             component: OrderDetails
@@ -110,10 +116,6 @@ export default new Router({
             path: '/IntroductionToConsultation',
             name: 'IntroductionToConsultation',
             component: IntroductionToConsultation
-        }, {
-            path: '/',
-            name: 'HelloWorld',
-            component: HelloWorld
         },
         {
             path: '/AddShippingAddress',
@@ -201,7 +203,7 @@ export default new Router({
         }, {
             path: '/Evaluate',
             name: 'Evaluate',
-            component: Evaluate
+            component: Evaluate,
         }, {
             path: '/EvaluateShare',
             name: 'EvaluateShare',
@@ -231,11 +233,6 @@ export default new Router({
             path: '/pfs',
             name: 'Powderfinishorder',
             component: Powderfinishorder
-        },
-        {
-            path: '/login',
-            name: 'Login',
-            component: Login
         },
         {
             path: '/msshlr',

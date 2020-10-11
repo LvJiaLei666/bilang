@@ -62,13 +62,16 @@
             <span class="body_052 r">￥ 6000.00</span>
     </div>
     <!-- 主体六 -->
-    <div class='body_06'>
+    <!-- <div class='body_06'>
         <span class="body_061">商品金额</span>
         <span class="body_061 ">￥ 6000.00</span>
-        <div class='foot_r'>
+        <div class='foot_r' @click="$router.push('/MyOrder')">
             <img src="../../../static\images\购物车\icon.png"><br/>去结算
         </div>
-    </div>
+    </div> -->
+
+    <van-submit-bar :price="6000.00" button-text="提交订单" label='实付款:' @submit="onSubmit">
+    </van-submit-bar>
   </div>
 </template>
 
@@ -79,12 +82,22 @@ export default {
     return {
      checked:false
   }
+},
+methods:{
+    onSubmit(){
+          this.$router.push({
+              path:'/MyOrder',
+          })
+    }
 }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.van-submit-bar__text{
+text-align: left;
+}
 .accounts{
   width:100%;
   height:13.77rem;

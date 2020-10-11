@@ -38,7 +38,9 @@
         </div>
     </div>
     <!-- 底部 -->
-    <van-button type="primary" size="large" class='foot_btn'>提交</van-button> 
+    <router-link to='/EvaluateShare'>
+        <van-button type="primary" size="large" class='foot_btn'>提交</van-button> 
+    </router-link>
   </div>
 </template>
 

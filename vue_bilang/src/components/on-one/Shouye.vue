@@ -25,9 +25,8 @@
 </div>
 
 <div class="box_3">
-  <div class="box_31">
+  <div class="box_31" @click="dian">
   <p>点击领取现金体验卷200元</p>
-
   </div>
 </div>
 </div>
@@ -46,6 +45,9 @@ export default {
     onClickRight() {
       Toast('按钮');
     },
+    dian(){
+        this.$router.push({path:'/Shouye3'}) 
+    }
   },
 }
 </script>

@@ -57,7 +57,7 @@
             </van-radio>
         </van-radio-group>
     </div> -->
-    <van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
+    <van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" >
     <van-checkbox v-model="checked">全选</van-checkbox>
     </van-submit-bar>
   </div>
@@ -77,7 +77,9 @@ export default {
   },
   methods:{
       onSubmit(){
-
+          this.$router.push({
+              path:'/Account',
+          })
       }
   }
 }

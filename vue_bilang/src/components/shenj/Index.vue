@@ -54,19 +54,19 @@
                 <img src="../../../static\images\个人中心\icon_01.png" >
                 <span>首页</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/PersonalDetails')">
                 <img src="../../../static\images\个人中心\icon_02.png" >
                 <span>我的信息</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/MyOrder')">
                 <img src="../../../static\images\个人中心\icon_03.png" >
                 <span>我的订单</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/Cart')">
                 <img src="../../../static\images\个人中心\icon_04.png" >
                 <span>我的购物车</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/mySize')">
                 <img src="../../../static\images\个人中心\icon_05.png" >
                 <span>我的尺寸</span>
             </div>
@@ -78,7 +78,7 @@
                 <img src="../../../static\images\个人中心\icon_07.png" >
                 <span>我的收藏</span>
             </div>
-            <div class='centers_icon centers_icons'>
+            <div class='centers_icon centers_icons' @click="$router.push('/MyAddress')">
                 <img src="../../../static\images\个人中心\icon_08.png" >
                 <span>我的地址</span>
             </div>
@@ -185,11 +185,12 @@ export default {
 .centers_icon>img{
 width:0.27rem;
 height:0.25rem;
-  margin:0.74rem 0.27rem 0 0.47rem;
+  margin:0rem 0.27rem 0 0.47rem;
 }
 .centers_icon>span{
   font-size: 0.3rem;
   color:#fff;
+  line-height: 0.9rem;
 }
 .centers_icons{
   margin-bottom:0.6rem;

@@ -48,7 +48,7 @@
         </van-cell>
         <van-form>
           <div class="save">
-            <van-button round block type="info" native-type="submit">
+            <van-button round block type="info" native-type="submit" @click="$router.push('/MyAddress')">
               保存
             </van-button>
           </div>

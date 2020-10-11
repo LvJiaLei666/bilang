@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <van-nav-bar title="开始测量" left-text="返回" left-arrow class="head">
+    <van-nav-bar title="开始测量" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -19,7 +19,7 @@
       </div>
       
        <div class="jt">
-         <span>下一步</span>
+         <span  @click="$router.push({path:'/mscf'})">下一步</span>
          <img src="..\..\..\static\images\我的尺寸\icon.png" alt="">
        </div>
   </div>
@@ -54,6 +54,7 @@ export default {
       methods: {
     onClickLeft() {
       Toast('返回');
+      this.$router.go(-1)
     },
     onClickRight() {
       Toast('按钮');

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <van-nav-bar title="测量尺寸" left-text="返回" left-arrow class="head">
+    <van-nav-bar title="测量尺寸" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -49,7 +49,7 @@
       <div></div>
     </div>
     <div class="btn">
-       <van-button color="#bbbbbb" plain>重新测量</van-button>
+       <van-button color="#bbbbbb" plain  @click="$router.push({path:'/msn'})">重新测量</van-button>
     <van-button color="#7232dd">确定尺寸</van-button>
    
     </div>
@@ -65,7 +65,7 @@ export default {
     },
       methods: {
     onClickLeft() {
-      Toast('返回');
+     this.$router.go(-1)
     },
     onClickRight() {
       Toast('按钮');
@@ -118,6 +118,6 @@ color: #234497;
 }
 .btn{
   width: 6.5rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 </style>

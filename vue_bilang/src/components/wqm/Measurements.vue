@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <van-nav-bar title="开始测量" left-text="返回" left-arrow class="head">
+    <van-nav-bar title="开始测量" left-text="返回" left-arrow class="head" >
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -49,7 +49,7 @@
       <div></div>
     </div>
     <div class="btn">
-    <van-button plain type="info">开始测量</van-button>
+    <van-button plain type="info" @click="$router.push({path:'/msneck'})">开始测量</van-button>
     </div>
   </div>
 </template>
@@ -63,7 +63,7 @@ export default {
     },
       methods: {
     onClickLeft() {
-      Toast('返回');
+     this.$router.go(-1)
     },
     onClickRight() {
       Toast('按钮');
@@ -96,6 +96,7 @@ font-family: STXihei;
 font-weight: 400;
 color: #999999;
 line-height: 24px;
+margin-top: 0.3rem;
 }
 .msno_wz_foot{
   
@@ -111,6 +112,6 @@ line-height: 23px;
 }
 .btn{
   width: 6.6rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 </style>

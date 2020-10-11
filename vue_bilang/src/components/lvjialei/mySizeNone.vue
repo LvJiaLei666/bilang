@@ -1,7 +1,13 @@
 <template>
   <div class="mySizeNone">
     <!-- nav -->
-    <van-nav-bar title="测量尺寸" left-text="返回" left-arrow class="head">
+    <van-nav-bar
+      title="测量尺寸"
+      left-text="返回"
+      left-arrow
+      class="head"
+      @click-left="onClickLeft"
+    >
       <template #right>
         <van-icon name="ellipsis" size="34" color="#fff" />
       </template>
@@ -18,43 +24,42 @@
     </div>
     <div class="wrap">
       <div class="all_size">
-        <div class="size_part">
+        <div class="size_part" @click="$router.push('/Height')">
           <img src="../../../static/images/我的尺寸/pic_5.png" />
           <p>身高</p>
-          <span>-  -</span>
+          <span>- -</span>
         </div>
-        <div class="size_part">
+        <div class="size_part" @click="$router.push('/Weight')">
           <img src="../../../static/images/我的尺寸/pic_4.png" />
           <p>体重</p>
-          <span>-  -</span>
+          <span>- -</span>
         </div>
-        <div class="size_part">
+        <div class="size_part" @click="$router.push('/Shoulders')">
           <img src="../../../static/images/我的尺寸/pic_6.png" />
           <p>肩宽</p>
-          <span>-  -</span>
+          <span>- -</span>
         </div>
       </div>
       <div class="all_size">
-        <div class="size_part">
+        <div class="size_part" @click="$router.push('/Chest')">
           <img src="../../../static/images/我的尺寸/pic_2.png" />
           <p>胸围</p>
-          <span>-  -</span>
+          <span>- -</span>
         </div>
-        <div class="size_part">
+        <div class="size_part" @click="$router.push('/Waist')">
           <img src="../../../static/images/我的尺寸/pic_1.png" />
           <p>腰围</p>
-          <span>-  -</span>
+          <span>- -</span>
         </div>
-        <div class="size_part">
+        <div class="size_part" @click="$router.push('/Hip')">
           <img src="../../../static/images/我的尺寸/pic_3.png" />
           <p>臀围</p>
-          <span>-  -</span>
+          <span>- -</span>
         </div>
       </div>
-      
     </div>
     <div class="start">
-      <van-button plain type="info" >开始测量</van-button>
+      <van-button plain type="info" @click="$router.push('/msn')">开始测量</van-button>
     </div>
   </div>
 </template>
@@ -70,7 +75,11 @@ export default {
   },
   watch: {
   },
-  methods: {},
+  methods: {
+    onClickLeft() {
+      this.$router.go(-1)
+    }
+  },
 };
 </script>
 
@@ -120,31 +129,31 @@ export default {
 }
 .all_size p {
   width: 1rem;
-  font-size: .31rem;
+  font-size: 0.31rem;
   color: #999;
   float: left;
   text-align: center;
 }
-.all_size span{
+.all_size span {
   width: 1rem;
-  font-size: .50rem;
+  font-size: 0.5rem;
   display: block;
   text-align: center;
   float: left;
 }
-.size_part{
+.size_part {
   width: 1rem;
   height: 2.43rem;
 }
-.wrap{
+.wrap {
   padding: 0 0.74rem;
 }
-.start{
-text-align: center;
-margin:2rem 0 ;
+.start {
+  text-align: center;
+  margin: 2rem 0;
 }
-.start button{
+.start button {
   width: 6.62rem;
-height: .9rem;
+  height: 0.9rem;
 }
 </style>

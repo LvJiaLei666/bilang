@@ -16,7 +16,7 @@
       </div>
       <p class="user_name">董大伟</p>
       <div class="white_block">
-        <div>
+        <div @click="$router.push('/mySizeNone')">
           <img src="../../../static/images/我的尺寸/icon_1.png" />
           <p>重新测量</p>
         </div>

@@ -40,6 +40,7 @@ export default {
 #app {
   font-size: 0px;
   background: #f3f3f3;
+  overflow: hidden;
 }
 * {
   margin: 0;

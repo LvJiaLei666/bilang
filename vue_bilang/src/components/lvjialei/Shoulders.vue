@@ -1,7 +1,7 @@
 <template>
   <div class="shoulders">
     <!-- nav -->
-    <van-nav-bar title="开始测量" left-text="返回" left-arrow class="head">
+    <van-nav-bar title="开始测量" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis" size="34" color="#fff" />
       </template>
@@ -23,7 +23,7 @@
             <span class="footer_num">0.0</span>
           <span class="footer_cm">cm</span>
           </p>
-          <div class="next">
+          <div class="next" @click="$router.push('/Chest')">
             <span>下一步</span>
             <img src="../../../static/images/我的尺寸/icon.png" />
           </div>
@@ -47,7 +47,11 @@ export default {
   },
   watch: {
   },
-  methods: {},
+  methods: {
+    onClickLeft(){
+      this.$router.go(-1)
+    }
+  },
 };
 </script>
 

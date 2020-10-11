@@ -1,7 +1,7 @@
 <template>
   <div class="accounts">
     <!-- 头部 -->
-    <van-nav-bar title="填写订单" left-text="返回" left-arrow class='head'>
+    <van-nav-bar title="填写订单" left-text="返回" left-arrow class='head' @click-left="onClickLeft">
     <template #right>
     <van-icon name="ellipsis" size="34" color='#fff'/>
     </template>
@@ -88,6 +88,9 @@ methods:{
           this.$router.push({
               path:'/MyOrder',
           })
+    },
+    onClickLeft(){
+      this.$router.go(-1)
     }
 }
 }

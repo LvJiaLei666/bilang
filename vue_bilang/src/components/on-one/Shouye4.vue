@@ -59,8 +59,8 @@ export default {
  methods: {
     onClickLeft() {
       // Toast('返回');
-        this.$router.push({path:'/Shouye3'}) 
-        // this.$router.go(-1);
+        // this.$router.push({path:'/Shouye3'}) 
+        this.$router.go(-1);
     },
     onClickRight() {
       Toast('按钮');
@@ -142,7 +142,7 @@ export default {
 .banner_2 {
   position: absolute;
   display: flex;
-  bottom: 5.4rem;
+  bottom: 7.4rem;
 }
 .banner_2 img {
   width: 1.4rem;

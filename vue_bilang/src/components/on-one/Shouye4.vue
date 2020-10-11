@@ -1,14 +1,10 @@
 <template>
   <div class="box">
-    <van-nav-bar
-      class="nav"
-      title="标题"
-      left-text="返回"
-      right-text="●●●"
-      fixed
-      @click-left="onClickLeft"
-      @click-right="onClickRight"
-    />
+     <van-nav-bar title="添加收货地址" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
+      <template #right>
+        <van-icon name="ellipsis"  size="34" color="#fff"/>
+      </template>
+    </van-nav-bar>
     <div class="complete">
       <div class="nangao">
         <img src="../../../static/images/h5页面4/h5页面x4_03_03.png" alt="" />
@@ -57,13 +53,8 @@
 <script>
 export default {
  methods: {
-    onClickLeft() {
-      // Toast('返回');
-        // this.$router.push({path:'/Shouye3'}) 
-        this.$router.go(-1);
-    },
-    onClickRight() {
-      Toast('按钮');
+ onClickLeft() {
+      this.$router.go(-1)
     },
   },
 }
@@ -74,7 +65,6 @@ export default {
   width: 100%;
   height: 15.5rem;
   background-color: black;
-  padding-top: 1.4rem;
   box-sizing: border-box;
 }
 .complete {
@@ -83,6 +73,7 @@ export default {
   margin: auto;
   background-color: #ffffff;
   position: relative;
+  margin-top: 0.5rem;
 }
 .banner {
   width: 0.5rem;

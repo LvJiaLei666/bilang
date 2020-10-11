@@ -1,14 +1,10 @@
 <template>
   <div class="box">
-       <van-nav-bar
-     class="nav"
-  title="测量尺寸"
-  left-text="返回"
-  right-text="●●●"
-  fixed
-  @click-left="onClickLeft"
-  @click-right="onClickRight"
-/>
+   <van-nav-bar title="添加收货地址" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
+      <template #right>
+        <van-icon name="ellipsis"  size="34" color="#fff"/>
+      </template>
+    </van-nav-bar>
 
 <div class="zhanshi">
   
@@ -64,13 +60,8 @@
 <script>
 export default {
   methods: {
-    onClickLeft() {
-
-      this.$router.go(-1);
-
-    },
-    onClickRight() {
-      this.$toast('按钮');
+   onClickLeft() {
+      this.$router.go(-1)
     },
   },
 }

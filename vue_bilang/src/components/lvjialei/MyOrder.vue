@@ -20,6 +20,7 @@
             <template #title>
               <div>
                 <img
+                  @click="$router.push('/OrderDetails')"
                   src="../../../static/images/我的订单/pic_1.png"
                   class="order_img"
                 />

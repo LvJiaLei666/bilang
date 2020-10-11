@@ -65,7 +65,7 @@
     <div class='body_06'>
         <span class="body_061">商品金额</span>
         <span class="body_061 ">￥ 6000.00</span>
-        <div class='foot_r'>
+        <div class='foot_r' @click="$router.push('/MyOrder')">
             <img src="../../../static\images\购物车\icon.png"><br/>去结算
         </div>
     </div>

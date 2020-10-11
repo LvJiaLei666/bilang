@@ -32,6 +32,7 @@
         />
         <!-- 限时特惠 -->
         <van-image
+            @click="$router.push('/Odds')"
             width="7.5rem"
             height="2.6rem"
             fit="cover"

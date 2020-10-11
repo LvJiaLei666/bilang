@@ -49,7 +49,7 @@
  <img src="..\..\..\static\images\首页\button.png" alt="" class="img_btn2">
   <div class="sku_foot">
     <img src="..\..\..\static\images\单品-图文信息\单品－图文信息_02.png" alt="" class="sku_foot_pic">
-  <img src="..\..\..\static\images\单品\单品_03.png" alt="" class="img_btn3">
+  <img src="..\..\..\static\images\单品\单品_03.png" alt="" class="img_btn3" @click="$router.push('/Cart')">
   <p class="sku_foot_wz_top">悠闲型男灰色衬衫</p>
     <p class="sku_foot_wz_mid">Sportsman leisure suit</p>
       <p class="sku_foot_wz_foot">¥ 899.00</p>

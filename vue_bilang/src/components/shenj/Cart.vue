@@ -57,7 +57,7 @@
                     <p>合计：¥ 2000.00</p>
                     <p>数量：1</p>
                 </div>
-                <div class='foot_r'>
+                <div class='foot_r' @click="$router.push('/Account')">
                     <img src="../../../static\images\购物车\icon.png">
                     <p>去结算</p>
                 </div>

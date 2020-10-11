@@ -27,12 +27,12 @@
   />
   <div style=" 
   ">
-    <van-button round block type="info" native-type="submit">
+    <van-button round block type="info" native-type="submit" @click="$router.push('/Index')">
       登录
     </van-button>
   </div>
 </van-form>
-  <van-button type="default"  style="width:6.1rem; margin-left:0.7rem" >注册账号</van-button> 
+  <van-button type="default"  style="width:6.1rem; margin-left:0.7rem" @click="$router.push('/Register')">注册账号</van-button> 
       <van-divider style="border:1px soild #1989fa;font-size:0.2rem;padding-top:1.8rem;">第三方登录</van-divider>
       <van-button class="vx" type="default"  style="width:6.1rem;margin-left:0.7rem;">微信登录</van-button>
   </div>

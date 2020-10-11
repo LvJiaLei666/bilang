@@ -1,6 +1,6 @@
 <template>
   <div class="all">
-     <van-nav-bar title="订单详情" left-text="返回" left-arrow class="head">
+     <van-nav-bar title="订单详情" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -87,7 +87,7 @@
 .pay_wx{
   font-size:0.24rem;
   color:#234497;
-  display: inline-block;
+  display:block;
   float:right;
   margin-right:0.32rem;
 }
@@ -222,3 +222,16 @@
 }
 
 </style>
+<script>
+export default {
+  data(){
+    return{
+  }
+  },
+   methods:{
+   onClickLeft(){
+      this.$router.go(-1)
+    }
+},
+}
+</script>

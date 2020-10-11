@@ -1,6 +1,6 @@
 <template>
   <div class="all">
-     <van-nav-bar title="我的收藏" left-text="返回" left-arrow class="head">
+     <van-nav-bar title="我的收藏" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -83,12 +83,14 @@ export default {
         price:2000
       }]
     }
-   
   },
    methods:{
     del(i){
       this.data.splice(i,1),
       console.log(i+1)
+          }, 
+      onClickLeft(){
+      this.$router.go(-1)
     }
     }
 }

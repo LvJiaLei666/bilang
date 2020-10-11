@@ -1,6 +1,6 @@
 <template>
   <div class="all">
-     <van-nav-bar title="添加收货地址" left-text="返回" left-arrow class="head">
+     <van-nav-bar title="注册" left-text="返回" left-arrow class="head">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
@@ -79,6 +79,7 @@
 }
 .show>img{
   width:0.36rem;
+  margin-bottom:0.2rem;
 }
 .send>span{
   font-size:0.24rem;

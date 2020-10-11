@@ -175,12 +175,12 @@
   margin-left: 0.2rem;
   font-size:0.35rem;
   width: 3rem;
-  display: inline-block;
+  display: block;
   float:left;
 }
 .count_down_{
-  display: inline-block;
-  width:3.2rem;
+  display: block;
+  width:3.5rem;
   float:right;
 }
  .colon {
@@ -229,7 +229,7 @@
 export default {
   data() {
     return {
-      active: 2,
+      time: 30 * 60 * 60 * 1000,
     };
   },
 };

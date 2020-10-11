@@ -54,6 +54,8 @@
   font-size:0.24rem; 
 }
 .online-pay{
+  padding-top:0.47rem;
+  box-sizing: border-box;
   width:100%;
   height:1.6rem;
   background: #fff;

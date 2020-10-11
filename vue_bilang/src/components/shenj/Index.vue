@@ -70,7 +70,7 @@
                 <img src="../../../static\images\个人中心\icon_05.png" >
                 <span>我的尺寸</span>
             </div>
-            <div class='centers_icon'>
+            <div class='centers_icon' @click="$router.push('/Wallet')">
                 <img src="../../../static\images\个人中心\icon_06.png" >
                 <span>我的钱包</span>
             </div>

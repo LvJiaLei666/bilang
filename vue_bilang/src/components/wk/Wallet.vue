@@ -4,7 +4,7 @@
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
-  </van-nav-bar>
+     </van-nav-bar>
   <div class="count">
      <img src="../../../static/images/我的钱包/headPic.png"> 
      <p>
@@ -21,39 +21,39 @@
   <img src="../../../static/images/我的钱包/icon.png"> 
   </div>
   <van-grid :border="false" :column-num="3">
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/Chalk')">
     <img src="../../../static/images/我的钱包/icon_1.png" style="height:0.6rem" />
     <span class="text">我的粉笔</span>
   </van-grid-item>
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/pfs')">
     <img src="../../../static/images/我的钱包/icon_2.png" style="height:0.6rem" />
     <span class="text">粉比订单</span>
   </van-grid-item>
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/MyMoney')">
     <img src="../../../static/images/我的钱包/icon_3.png" style="height:0.6rem" />
     <span class="text">我的代言费</span>
   </van-grid-item>
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/PrivateCard')">
     <img src="../../../static/images/我的钱包/icon_4.png" style="height:0.6rem" />
     <span class="text">我的私享卡</span>
-  </van-grid-item>
-  <van-grid-item>
+  </van-grid-item >
+  <van-grid-item @click="$router.push('/Integrate')">
     <img src="../../../static/images/我的钱包/icon_5.png" style="height:0.6rem" />
     <span class="text">我的积分</span>
   </van-grid-item>
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/Coupon')">
     <img src="../../../static/images/我的钱包/icon_6.png" style="height:0.6rem" />
     <span class="text">我的优惠券</span>
   </van-grid-item>
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/Bill')">
     <img src="../../../static/images/我的钱包/icon_7.png" style="height:0.6rem" />
     <span class="text">账单查询</span>
   </van-grid-item>
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/pfs')">
     <img src="../../../static/images/我的钱包/icon_8.png" style="height:0.6rem" />
     <span class="text">粉比权益</span>
   </van-grid-item>
-  <van-grid-item>
+  <van-grid-item @click="$router.push('/Shouye')">
     <img src="../../../static/images/我的钱包/icon_9.png" style="height:0.6rem"/>
     <span class="text">比朗学院</span>
   </van-grid-item>

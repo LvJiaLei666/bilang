@@ -12,7 +12,7 @@
     </van-cell-group>
 
     <van-row type="flex" justify="space-between" class="JF">
-      <van-col span="6">积分兑换</van-col>
+      <van-col span="6" @click="$router.push('/Integral')">积分兑换</van-col>
       <van-col span="6"><span></span></van-col>
       <van-col span="6">积分规则</van-col>
     </van-row>

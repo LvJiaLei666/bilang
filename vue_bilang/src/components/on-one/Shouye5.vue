@@ -65,7 +65,8 @@
 export default {
   methods: {
     onClickLeft() {
-      Toast('返回');
+      // Toast('返回');
+        this.$router.push({path:'/Shouye4'}) 
     },
     onClickRight() {
       Toast('按钮');

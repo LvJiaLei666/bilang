@@ -6,7 +6,6 @@
   title="标题"
   left-text="返回"
   right-text="●●●"
-  left-arrow
   fixed
   @click-left="onClickLeft"
   @click-right="onClickRight"
@@ -68,7 +67,8 @@
 export default {
  methods: {
     onClickLeft() {
-      Toast('返回');
+      // Toast('返回');
+        this.$router.push({path:'/Shouye2'}) 
     },
     onClickRight() {
       Toast('按钮');

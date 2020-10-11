@@ -5,18 +5,16 @@
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
   </van-nav-bar>
-  <div class="detailed">
-  <img src="../../../static/images/限时特惠/pic_1.png"> 
-  <p>春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长...</p>
-  <span>￥ 2000.00</span>
-  <img src="../../../static/images/我的收藏/我的收藏_06.png"> 
-</div>
- <div class="detailed">
-  <img src="../../../static/images/限时特惠/pic_1.png"> 
-  <p>春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长...</p>
-  <span>￥ 2000.00</span>
-  <img src="../../../static/images/我的收藏/我的收藏_06.png"> 
-</div>
+
+
+    <div class="detailed"  v-for="(item,index) in data" :key='item.id'>
+      <img src="../../../static/images/限时特惠/pic_1.png"> 
+      <p>春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长...</p>
+      <span>￥ {{item.price}}</span>
+      <img src="../../../static/images/我的收藏/我的收藏_06.png" @click="del(index)"> 
+    </div>
+
+
   </div>
 </template>
 <style scoped>
@@ -68,3 +66,30 @@
   height:14rem;
 }
 </style>
+<script>
+export default {
+  data(){
+    return{
+      data:[{
+        id:1,
+        price:2000
+      },
+      {
+        id:2,
+        price:2000
+      }
+      ,{
+        id:3,
+        price:2000
+      }]
+    }
+   
+  },
+   methods:{
+    del(i){
+      this.data.splice(i,1),
+      console.log(i+1)
+    }
+    }
+}
+</script>

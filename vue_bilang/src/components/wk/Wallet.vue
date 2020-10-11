@@ -124,6 +124,8 @@
   height:1.3rem;
 }
 .count{
+  padding-top:0.65rem;
+  box-sizing: border-box;
   text-align: right;
   position: relative;
   width:7.5rem;

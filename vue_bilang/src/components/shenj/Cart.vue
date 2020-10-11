@@ -10,33 +10,15 @@
     <div class='body'>
         <div class="body_carts">
             <van-checkbox-group v-model="result">
-                <van-checkbox name="1" label-disabled>
-                    <img src="../../../static\images\购物车\h5页面_2_04.png" class='body_imgs'>
-                    <div class="body_carts_shop">
-                        <p class="body_ps">春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长</p>
-                        <h5 class='body_h5'>¥ 2000.00</h5>
-                        <van-stepper v-model="value" input-width="0.6rem" button-size="0.5rem" class='bjq' />
-                        <img src="../../../static\images\购物车\del.png" class="img_del">
-                    </div>
-                </van-checkbox>
-                <van-checkbox name="2" label-disabled>
-                    <img src="../../../static\images\购物车\h5页面_2_04.png" class='body_imgs'>
-                    <div class="body_carts_shop">
-                        <p class="body_ps">春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长</p>
-                        <h5 class='body_h5'>¥ 2000.00</h5>
-                        <van-stepper v-model="value1" input-width="0.6rem" button-size="0.5rem" class='bjq' />
-                        <img src="../../../static\images\购物车\del.png" class="img_del">
-                    </div>
-                </van-checkbox>
-                <van-checkbox name="3" label-disabled>
-                    <img src="../../../static\images\购物车\h5页面_2_04.png" class='body_imgs'>
-                    <div class="body_carts_shop">
-                        <p class="body_ps">春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长</p>
-                        <h5 class='body_h5'>¥ 2000.00</h5>
-                        <van-stepper v-model="value2" input-width="0.6rem" button-size="0.5rem" class='bjq' />
-                        <img src="../../../static\images\购物车\del.png" class="img_del">
-                    </div>
-                </van-checkbox>
+                    <van-checkbox :name="item.num" label-disabled @click='other' v-for='(item,index) in cartsList' :key='item.id'>
+                        <img src="../../../static\images\购物车\h5页面_2_04.png" class='body_imgs'>
+                        <div class="body_carts_shop">
+                            <p class="body_ps">{{item.title}}</p>
+                            <h5 class='body_h5'>¥ <span>{{item.price}}</span></h5>
+                            <van-stepper v-model="item.value" input-width="0.6rem" button-size="0.5rem" class='bjq' @change='change' />
+                            <img src="../../../static\images\购物车\del.png" class="img_del" @click='del(index)'>
+                        </div>
+                    </van-checkbox>
             </van-checkbox-group>
         </div>
         
@@ -57,8 +39,10 @@
             </van-radio>
         </van-radio-group>
     </div> -->
-    <van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
-    <van-checkbox v-model="checked">全选</van-checkbox>
+    <van-submit-bar  button-text="提交订单" @submit="onSubmit">
+    <van-checkbox class='alls' v-model="checked" @click='all'>全选</van-checkbox>
+        <p class='prices'><span>合计</span>￥<span>2000.00</span></p>
+        <p class='counts'><span>数量</span>￥<span>1</span></p>
     </van-submit-bar>
   </div>
 </template>
@@ -69,15 +53,62 @@ export default {
   data () {
     return {
       result:[],
-      value:1,
-      value1:1,
-      value2:1,
-      checked:false
+      checked:false,
+      counts:2000.00,
+      cartsList:[{
+        id:1,
+       title:'春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长',
+       price:2000.00,
+       num:1,
+       value:1
+      },{
+       id:2,
+       title:'春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长',
+       price:2000.00,
+       num:2,
+       value:1
+      },{
+       id:3,
+       title:'春秋商务休闲加肥加大胖子衬衣肥佬宽松中年正装长',
+       price:2000.00,
+       num:3,
+       value:1
+      }]
     }
   },
   methods:{
       onSubmit(){
 
+      },
+      all(){
+        this.cartsList.forEach((item,index) => {
+            if(this.checked == true){
+                this.result.push(item.id);
+            }else{
+                this.result = [];
+            }
+        });
+      },
+      other(){
+        this.result.push(this.cartsList.id);
+        this.result.pop();
+        if(this.result.length == this.cartsList.length){
+            this.checked = true;
+        }else{
+        this.checked = false
+        }
+      },
+      del(i){
+        // this.cartsList.pop();
+        this.cartsList.splice(i,1);
+        console.log(i);
+      },
+      change(){
+          this.cartsList.forEach(item =>{
+              if(item.value <= 0){
+                  item.value = 1
+              }
+          })
       }
   }
 }
@@ -85,10 +116,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.alls{
+    margin-right: 0.1rem;
+}
+.prices{
+    margin:0 0.1rem;
+}
+.counts{
+    margin-right:0.2rem;
+}
 .van-checkbox{
     padding-left: 0.3rem;
     background-color: #fff;
     margin-top:0.18rem;
+    font-size: 0.14rem;
+    color:#323233;
+    text-align: left;
 }
 .carts{
     width:7.5rem;
@@ -99,7 +142,6 @@ export default {
     width:100%;
     height:2.1rem;
     margin:0.3rem auto;
-    background-color: #fff;
 }
 .van-radio{
     margin-left:0.25rem;

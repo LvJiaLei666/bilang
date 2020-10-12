@@ -6,7 +6,7 @@
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>
     </van-nav-bar>
-   <div class="pic">
+   <div class="pic" @click="$router.push('/IntroductionToConsultation')">
       <img src="..\..\..\static\images\潮流资讯\潮流_02.png" alt="">
       <img src="..\..\..\static\images\潮流资讯\潮流_04.png" alt="" class="pic_nr">
        <img src="..\..\..\static\images\潮流资讯\潮流_05_06.png" alt="" class="pic_nr">

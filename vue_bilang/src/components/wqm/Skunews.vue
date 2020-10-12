@@ -86,7 +86,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+#app{
+  overflow: scroll;
+}
 .skun_pj{
   width: 7rem;
   margin:0.5rem 0.2rem;

@@ -1,6 +1,6 @@
 <template>
   <div class="all">
-    <van-nav-bar title="添加收货地址" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
+    <van-nav-bar title="介绍" left-text="返回" left-arrow class="head" @click-left="onClickLeft">
       <template #right>
         <van-icon name="ellipsis"  size="34" color="#fff"/>
       </template>

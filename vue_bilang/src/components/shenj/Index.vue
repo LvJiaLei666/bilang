@@ -17,6 +17,7 @@
         </van-swipe>
         <!-- 时尚精选 -->
         <van-image
+            @click="$router.push('/Fashion')"
             width="7.5rem"
             height="2.6rem"
             fit="cover"
@@ -24,6 +25,7 @@
         />
         <!-- 潮流资讯 -->
         <van-image
+            @click="$router.push('/tif')"
             width="7.5rem"
             height="2.6rem"
             fit="cover"
